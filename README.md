@@ -60,6 +60,15 @@ The inference workflow reconstructs missing trip segments at trajectory level ra
 Panagiotis Betchavas, Alexandros Troupiotis-Kapeliaris, Kostas Patroumpas, Giannis Spiliopoulos, Dimitrios Skoutas, Dimitris Zissis, and Nikos Bikakis.
 [**Trajectory Imputation Using Computer Vision Models**](https://www.nbikakis.com/papers/Trajectory%20Imputation%20Using%20Computer%20Vision%20Models_2026.pdf), International Workshop on Multi-Sensor Trajectory Knowledge Discovery & Extraction, MuseKDE 2026.
 
+```
+@inproceedings{BetchavasIMGN2026,
+  title  = {Trajectory Imputation Using Computer Vision Models},
+  author = {Betchavas, Panagiotis and Troupiotis-Kapeliaris, Alexandros and Patroumpas, Kostas and Spiliopoulos, Giannis and Skoutas, Dimitrios and Zissis, Dimitris and Bikakis, Nikos},
+  booktitle ={International Workshop on Multi-Sensor Trajectory Knowledge Discovery & Extraction (MuseKDE 2026)},
+  year   = {2026}
+}
+```
+
 <br>
 
 
