@@ -1,5 +1,9 @@
-# IMGIN: IMaGe-based ImputatioN of Trajectories
-This repository implements an image-based pipeline for vessel trajectory completion from AIS-derived trip data. It first preprocesses raw trips into a clean and temporally aligned representation, converts them into H3-aware RGB wave-map images, trains a U-Net model to inpaint missing trajectory regions, and finally reconstructs missing vessel positions back into geographic coordinates for evaluation on unseen holdout trips. The workflow is organized around a preprocessing notebook, a training script, an inference/reconstruction notebook, and a shared utility module that contains the common data transformation, encoding, quantization, training, and evaluation logic.
+# IMGIN: Trajectory Imputation Using Computer Vision Models
+
+IMGIN Framework reframes trajectory imputation problem as image reconstruction task. IMGIN introduces the notion of wave map, a spatiotemporal representation in which raw trajectory data is transformed into a structured multi-channel image, where temporal evolution is captured by image coordinates and spatial location is encoded by color. This representation enables the use of high-performance computer vision architectures to recover missing path segments
+
+This repository implements IMGIN pipeline for vessel trajectory completion from AIS-derived trip data. 
+It first preprocesses raw trips into a clean and temporally aligned representation, converts them into H3-aware RGB wave-map images, trains a U-Net model to inpaint missing trajectory regions, and finally reconstructs missing vessel positions back into geographic coordinates for evaluation on unseen holdout trips. The workflow is organized around a preprocessing notebook, a training script, an inference/reconstruction notebook, and a shared utility module that contains the common data transformation, encoding, quantization, training, and evaluation logic.
 
 ## Installation
 
