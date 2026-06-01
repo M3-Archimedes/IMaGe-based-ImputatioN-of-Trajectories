@@ -35,6 +35,30 @@ The training pipeline frames missing trajectory recovery as an image inpainting 
 
 The inference workflow reconstructs missing trip segments at trajectory level rather than only at image level. For each holdout trip, the notebook can inject an artificial gap, fill small gaps by classical interpolation, and pass the remaining masked regions through the trained inpainting model after converting the trip into its wave-map representation. The inpainted RGB output is then translated back into valid H3 cells and geographic coordinates using the stored H3 color and position maps. This yields a reconstructed trajectory in longitude and latitude space, which is evaluated against ground truth using DTW over longitude, latitude, and combined two-dimensional geometry, along with H3 match rate and fill rate. The final outputs include reconstructed trip CSV files and interactive Folium maps for visual inspection.
 
+
+<br>
+
+## Related GitHub Repositories 
+
+* [**HABIT: Aggregation-based Imputation Framework for Vessel Trajectories**](https://github.com/M3-Archimedes/HABIT)
+
+* [**Context-Enriched Natural Language Descriptions of Vessel Trajectories**](https://github.com/M3-Archimedes/AIS-semantic-trajectories)
+
+* [**AIS Vessel Trajectory Annotation**](https://github.com/M3-Archimedes/AIS-trajectory-annotation)
+
+
+## Project 
+[**M3: Multimodal Foundation Models for the Maritime Domain Project**](https://github.com/M3-Archimedes)
+
+
+
+## Publication 
+Panagiotis Betchavas, Alexandros Troupiotis-Kapeliaris, Kostas Patroumpas, Giannis Spiliopoulos, Dimitrios Skoutas, Dimitris Zissis, and Nikos Bikakis.
+[**Trajectory Imputation Using Computer Vision Models**](https://www.nbikakis.com/papers/Trajectory%20Imputation%20Using%20Computer%20Vision%20Models_2026.pdf), International Workshop on Multi-Sensor Trajectory Knowledge Discovery & Extraction, MuseKDE 2026.
+
+<br>
+
+
 ## License
 
 The contents of these repository are licensed under [GNU General Public License v3.0](https://github.com/M3-Archimedes/IMaGe-based-ImputatioN-of-Trajectories/blob/main/LICENSE).
